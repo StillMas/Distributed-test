@@ -1,6 +1,7 @@
 # 将csv数据导入hive并转换为parquet table
 ## 为什么要用parquet table?
 hive的存储有好几种不同的格式。对比见下：
+
     1.textfile
     textfile为默认格式
     存储方式：行存储
