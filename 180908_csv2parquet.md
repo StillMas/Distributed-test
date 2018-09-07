@@ -125,10 +125,10 @@ hive存储csv需要用到SerDe形式，具体是怎么回事可以参照https://
     
     # 之后就可以
     insert_commands = []
-      for datestr in datestrs:
-          insert_command = insert_select_part + ' where datestr = \'%s\';' \
+    for datestr in datestrs:
+        insert_command = insert_select_part + ' where datestr = \'%s\';' \
                                                   % (datestr) 
-          insert_commands.append(insert_command)
+        insert_commands.append(insert_command)
           
     # 下面的create_parquet_table是一个字符串，记录了上面从set到create table的一系列代码，这里略去。
     with open(r'/home/inn/transfer_table_parquet.txt', 'wb') as f:
